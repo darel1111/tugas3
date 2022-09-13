@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420"controls>
+    <source src="Horror Short Film _The Gaze_ _ ALTER _ Warped Wednesday.mp4" type="video/mp4">
+    <track src="[SubtitleTools.com] [English (US)]Horror Short Film _The Gaze_ _ ALTER _ Warped Wednesday[Checksub.com].vtt" kind="subtitles" srclang="id" label="Indonesia">
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 1000; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 550; 
+} 
+</script> 
+
+<p>Video courtesy of <a href="https://youtu.be/4JB-YXDOY4Q" target="_blank">Ardhito Pramono</a>.</p>
+
+</body> 
+</html>
